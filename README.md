@@ -1,4 +1,7 @@
-Game Kit - GKIT Version Infinity Final Forever
+Game Kit
+
+GKIT Version Infinity Final Forever
+
 Copyright 1995-2012 Lucian Hontau
 
 Nostalgia Release
