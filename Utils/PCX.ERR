@@ -1,0 +1,16 @@
+..\utilsrc\pcx.cpp(48): Warning! W389: (col 21) integral value may be truncated during assignment or initialization 
+..\utilsrc\pcx.cpp(52): Warning! W389: (col 21) integral value may be truncated during assignment or initialization 
+..\utilsrc\pcx.cpp(209): Warning! W389: (col 23) integral value may be truncated during assignment or initialization 
+..\utilsrc\pcx.cpp(210): Warning! W389: (col 24) integral value may be truncated during assignment or initialization 
+..\utilsrc\pcx.cpp(242): Warning! W389: (col 72) integral value may be truncated during assignment or initialization 
+..\utilsrc\pcx.cpp(243): Warning! W389: (col 72) integral value may be truncated during assignment or initialization 
+..\utilsrc\pcx.cpp(244): Warning! W389: (col 72) integral value may be truncated during assignment or initialization 
+..\utilsrc\pcx.cpp(263): Warning! W389: (col 75) integral value may be truncated during assignment or initialization 
+..\utilsrc\pcx.cpp(265): Warning! W389: (col 75) integral value may be truncated during assignment or initialization 
+..\utilsrc\pcx.cpp(267): Warning! W389: (col 75) integral value may be truncated during assignment or initialization 
+..\utilsrc\pcx.cpp(329): Warning! W389: (col 57) integral value may be truncated during assignment or initialization 
+..\utilsrc\pcx.cpp(330): Warning! W389: (col 58) integral value may be truncated during assignment or initialization 
+..\utilsrc\pcx.cpp(335): Warning! W389: (col 55) integral value may be truncated during assignment or initialization 
+..\utilsrc\pcx.cpp(340): Warning! W389: (col 72) integral value may be truncated during assignment or initialization 
+..\utilsrc\pcx.cpp(341): Warning! W389: (col 72) integral value may be truncated during assignment or initialization 
+..\utilsrc\pcx.cpp(342): Warning! W389: (col 72) integral value may be truncated during assignment or initialization 

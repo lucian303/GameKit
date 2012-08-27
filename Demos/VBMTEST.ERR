@@ -1,0 +1,2 @@
+..\utilsrc\vbmtest.cpp(175): Warning! W014: (col 1) no reference to symbol 'argv' 
+..\utilsrc\vbmtest.cpp(175): Note! N392: (col 1) 'char * * argv' in 'int main( int, char * * )' defined in: ..\utilsrc\vbmtest.cpp(14) (col 28) 

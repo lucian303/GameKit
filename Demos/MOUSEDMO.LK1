@@ -1,0 +1,3 @@
+NAME mousedmo
+FIL mousedmo.obj
+LIBR ..\lib\gkit.lib

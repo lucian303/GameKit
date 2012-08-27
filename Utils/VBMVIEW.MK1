@@ -1,0 +1,17 @@
+!define BLANK ""
+c:\projects\gkit\utils\vbmview.obj : c:\projects\gkit\utilsrc\vbmview.cpp .A&
+UTODEPEND
+ @c:
+ cd c:\projects\gkit\utils
+ *wpp386 ..\utilsrc\vbmview.cpp -i=C:\WATCOM\h -w4 -e25 -zp4 -zq -otexan -ol&
+ -ol+ -om -oc -oi -oa -or -oe20 -5r -bt=dos -mf
+
+c:\projects\gkit\utils\vbmview.exe : c:\projects\gkit\utils\vbmview.obj c:\p&
+rojects\gkit\lib\gkit.lib .AUTODEPEND
+ @c:
+ cd c:\projects\gkit\utils
+ @%write vbmview.lk1 NAME vbmview
+ @%append vbmview.lk1 FIL vbmview.obj
+ @%append vbmview.lk1 LIBR ..\lib\gkit.lib
+ *wlink SYS dos4g op m op maxe=25 op q op symf @vbmview.lk1
+

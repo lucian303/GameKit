@@ -1,0 +1,3 @@
+NAME vbmtest
+FIL vbmtest.obj
+LIBR ..\lib\gkit.lib

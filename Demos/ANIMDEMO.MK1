@@ -1,0 +1,17 @@
+!define BLANK ""
+c:\projects\gkit\demos\animdemo.obj : c:\projects\gkit\demosrc\animdemo.cpp &
+.AUTODEPEND
+ @c:
+ cd c:\projects\gkit\demos
+ *wpp386 ..\demosrc\animdemo.cpp -i=C:\WATCOM\h -w4 -e25 -zp4 -zq -otexan -o&
+l -ol+ -om -oc -oi -oa -or -oe20 -d2 -5r -bt=dos -mf
+
+c:\projects\gkit\demos\animdemo.exe : c:\projects\gkit\demos\animdemo.obj c:&
+\projects\gkit\lib\gkit.lib .AUTODEPEND
+ @c:
+ cd c:\projects\gkit\demos
+ @%write animdemo.lk1 NAME animdemo
+ @%append animdemo.lk1 FIL animdemo.obj
+ @%append animdemo.lk1 LIBR ..\lib\gkit.lib
+ *wlink d all SYS dos4g op m op maxe=25 op q op symf @animdemo.lk1
+

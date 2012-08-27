@@ -1,0 +1,3 @@
+NAME archmake
+FIL archmake.obj
+LIBR ..\lib\gkit.lib

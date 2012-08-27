@@ -1,0 +1,3 @@
+NAME animdemo
+FIL animdemo.obj
+LIBR ..\lib\gkit.lib

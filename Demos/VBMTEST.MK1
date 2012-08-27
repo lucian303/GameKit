@@ -1,0 +1,17 @@
+!define BLANK ""
+c:\projects\gkit\demos\vbmtest.obj : c:\projects\gkit\utilsrc\vbmtest.cpp .A&
+UTODEPEND
+ @c:
+ cd c:\projects\gkit\demos
+ *wpp386 ..\utilsrc\vbmtest.cpp -i=C:\WATCOM\h -w4 -e25 -zp4 -zq -otexan -ol&
+ -ol+ -om -oc -oi -oa -or -oe20 -d2 -5r -bt=dos -mf
+
+c:\projects\gkit\demos\vbmtest.exe : c:\projects\gkit\demos\vbmtest.obj c:\p&
+rojects\gkit\lib\gkit.lib .AUTODEPEND
+ @c:
+ cd c:\projects\gkit\demos
+ @%write vbmtest.lk1 NAME vbmtest
+ @%append vbmtest.lk1 FIL vbmtest.obj
+ @%append vbmtest.lk1 LIBR ..\lib\gkit.lib
+ *wlink d all SYS dos4g op m op maxe=25 op q op symf @vbmtest.lk1
+

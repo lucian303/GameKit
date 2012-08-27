@@ -1,0 +1,3 @@
+NAME kbddemo
+FIL kbddemo.obj
+LIBR ..\lib\gkit.lib

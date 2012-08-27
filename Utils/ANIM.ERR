@@ -1,0 +1,5 @@
+..\h\animate.h(91): Warning! W014: (col 49) no reference to symbol 'Anim' 
+..\h\animate.h(91): Note! N392: (col 49) 'Animation * Anim' in 'void Animation::AssignAnimation( Animation * )' defined in: ..\h\animate.h(91) (col 42) 
+..\h\animate.h(91): Note! N393: (col 49) included from ..\utilsrc\anim.cpp(9) 
+..\utilsrc\anim.cpp(175): Warning! W014: (col 1) no reference to symbol 'argv' 
+..\utilsrc\anim.cpp(175): Note! N392: (col 1) 'char * * argv' in 'int main( int, char * * )' defined in: ..\utilsrc\anim.cpp(14) (col 28) 

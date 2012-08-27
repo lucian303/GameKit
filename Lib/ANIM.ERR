@@ -1,0 +1,6 @@
+..\utilsrc\anim.cpp(41): Warning! W389: (col 49) integral value may be truncated during assignment or initialization 
+..\utilsrc\anim.cpp(44): Warning! W389: (col 49) integral value may be truncated during assignment or initialization 
+..\utilsrc\anim.cpp(47): Warning! W389: (col 49) integral value may be truncated during assignment or initialization 
+..\utilsrc\anim.cpp(51): Warning! W389: (col 50) integral value may be truncated during assignment or initialization 
+..\utilsrc\anim.cpp(54): Warning! W389: (col 50) integral value may be truncated during assignment or initialization 
+..\utilsrc\anim.cpp(57): Warning! W389: (col 50) integral value may be truncated during assignment or initialization 

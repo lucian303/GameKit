@@ -1,0 +1,2 @@
+..\source\keyboard.cpp(45): Warning! W389: (col 19) integral value may be truncated during assignment or initialization 
+..\source\keyboard.cpp(48): Warning! W389: (col 15) integral value may be truncated during assignment or initialization 

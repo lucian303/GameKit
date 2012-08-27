@@ -1,0 +1,96 @@
+!define BLANK ""
+c:\projects\gkit\lib\3d.obj : c:\projects\gkit\source\3d.cpp .AUTODEPEND
+ @c:
+ cd c:\projects\gkit\lib
+ *wpp386 ..\source\3d.cpp -i=C:\WATCOM\h -w4 -e100 -zp4 -zq -otexan -ol -ol+&
+ -om -oc -oi -oa -or -oe20 -d2 -db -5r -bt=dos -mf -wx
+
+c:\projects\gkit\lib\animate.obj : c:\projects\gkit\source\animate.cpp .AUTO&
+DEPEND
+ @c:
+ cd c:\projects\gkit\lib
+ *wpp386 ..\source\animate.cpp -i=C:\WATCOM\h -w4 -e100 -zp4 -zq -otexan -ol&
+ -ol+ -om -oc -oi -oa -or -oe20 -d2 -db -5r -bt=dos -mf -wx
+
+c:\projects\gkit\lib\archive.obj : c:\projects\gkit\source\archive.cpp .AUTO&
+DEPEND
+ @c:
+ cd c:\projects\gkit\lib
+ *wpp386 ..\source\archive.cpp -i=C:\WATCOM\h -w4 -e100 -zp4 -zq -otexan -ol&
+ -ol+ -om -oc -oi -oa -or -oe20 -d2 -db -5r -bt=dos -mf -wx
+
+c:\projects\gkit\lib\bitmap.obj : c:\projects\gkit\source\bitmap.cpp .AUTODE&
+PEND
+ @c:
+ cd c:\projects\gkit\lib
+ *wpp386 ..\source\bitmap.cpp -i=C:\WATCOM\h -w4 -e100 -zp4 -zq -otexan -ol &
+-ol+ -om -oc -oi -oa -or -oe20 -d2 -db -5r -bt=dos -mf -wx
+
+c:\projects\gkit\lib\clip.obj : c:\projects\gkit\source\clip.cpp .AUTODEPEND
+ @c:
+ cd c:\projects\gkit\lib
+ *wpp386 ..\source\clip.cpp -i=C:\WATCOM\h -w4 -e100 -zp4 -zq -otexan -ol -o&
+l+ -om -oc -oi -oa -or -oe20 -d2 -db -5r -bt=dos -mf -wx
+
+c:\projects\gkit\lib\fixed.obj : c:\projects\gkit\source\fixed.cpp .AUTODEPE&
+ND
+ @c:
+ cd c:\projects\gkit\lib
+ *wpp386 ..\source\fixed.cpp -i=C:\WATCOM\h -w4 -e100 -zp4 -zq -otexan -ol -&
+ol+ -om -oc -oi -oa -or -oe20 -d2 -db -5r -bt=dos -mf -wx
+
+c:\projects\gkit\lib\keyboard.obj : c:\projects\gkit\source\keyboard.cpp .AU&
+TODEPEND
+ @c:
+ cd c:\projects\gkit\lib
+ *wpp386 ..\source\keyboard.cpp -i=C:\WATCOM\h -w4 -e100 -zp4 -zq -otexan -o&
+l -ol+ -om -oc -oi -oa -or -oe20 -d2 -db -5r -bt=dos -mf -wx
+
+c:\projects\gkit\lib\mode13h.obj : c:\projects\gkit\source\mode13h.cpp .AUTO&
+DEPEND
+ @c:
+ cd c:\projects\gkit\lib
+ *wpp386 ..\source\mode13h.cpp -i=C:\WATCOM\h -w4 -e100 -zp4 -zq -otexan -ol&
+ -ol+ -om -oc -oi -oa -or -oe20 -d2 -db -5r -bt=dos -mf -wx
+
+c:\projects\gkit\lib\mouse.obj : c:\projects\gkit\source\mouse.cpp .AUTODEPE&
+ND
+ @c:
+ cd c:\projects\gkit\lib
+ *wpp386 ..\source\mouse.cpp -i=C:\WATCOM\h -w4 -e100 -zp4 -zq -otexan -ol -&
+ol+ -om -oc -oi -oa -or -oe20 -d2 -db -5r -bt=dos -mf -wx
+
+c:\projects\gkit\lib\palette.obj : c:\projects\gkit\source\palette.cpp .AUTO&
+DEPEND
+ @c:
+ cd c:\projects\gkit\lib
+ *wpp386 ..\source\palette.cpp -i=C:\WATCOM\h -w4 -e100 -zp4 -zq -otexan -ol&
+ -ol+ -om -oc -oi -oa -or -oe20 -d2 -db -5r -bt=dos -mf -wx
+
+c:\projects\gkit\lib\vbuffer.obj : c:\projects\gkit\source\vbuffer.cpp .AUTO&
+DEPEND
+ @c:
+ cd c:\projects\gkit\lib
+ *wpp386 ..\source\vbuffer.cpp -i=C:\WATCOM\h -w4 -e100 -zp4 -zq -otexan -ol&
+ -ol+ -om -oc -oi -oa -or -oe20 -d2 -db -5r -bt=dos -mf -wx
+
+c:\projects\gkit\lib\gkit.lib : c:\projects\gkit\lib\3d.obj c:\projects\gkit&
+\lib\animate.obj c:\projects\gkit\lib\archive.obj c:\projects\gkit\lib\bitma&
+p.obj c:\projects\gkit\lib\clip.obj c:\projects\gkit\lib\fixed.obj c:\projec&
+ts\gkit\lib\keyboard.obj c:\projects\gkit\lib\mode13h.obj c:\projects\gkit\l&
+ib\mouse.obj c:\projects\gkit\lib\palette.obj c:\projects\gkit\lib\vbuffer.o&
+bj .AUTODEPEND
+ @c:
+ cd c:\projects\gkit\lib
+ %create gkit.lb1
+!ifneq BLANK "3d.obj animate.obj archive.obj bitmap.obj clip.obj fixed.obj k&
+eyboard.obj mode13h.obj mouse.obj palette.obj vbuffer.obj"
+ @for %i in (3d.obj animate.obj archive.obj bitmap.obj clip.obj fixed.obj ke&
+yboard.obj mode13h.obj mouse.obj palette.obj vbuffer.obj) do @%append gkit.l&
+b1 +'%i'
+!endif
+!ifneq BLANK ""
+ @for %i in () do @%append gkit.lb1 +'%i'
+!endif
+ *wlib -b -c -n -q -p=512 -d=.\lib gkit.lib @gkit.lb1
+

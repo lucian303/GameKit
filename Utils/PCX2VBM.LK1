@@ -1,0 +1,3 @@
+NAME pcx2vbm
+FIL pcx.obj,pcx2vbm.obj
+LIBR ..\lib\gkit.lib
