@@ -12,5 +12,7 @@ under Watcom C/C++ 9.5 or above. It has many
 features including Virtual 18-bit color and
 SFX. 
 
-Don't judge too quickly. I was young. :)
+Please, don't judge too quickly. I was young. :)
+
+Enjoy,
 Lucian Hontau
